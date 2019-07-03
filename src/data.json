@@ -3,6 +3,10 @@
     "name": "Bike Brands",
     "items": [
       {
+        "name": "Merida",
+        "url": "https://www.merida-bikes.com"
+      },
+      {
         "name": "Specialized",
         "url": "https://www.specialized.com"
       },
