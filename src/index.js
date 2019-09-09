@@ -43,7 +43,7 @@ const renderListItems = items => items.map(({
       eventLabel={url}
       to={url}
       target="_blank"
-      el="noreferrer noopener"
+      rel="noreferrer noopener"
     >
       {name}
     </ReactGA.OutboundLink>
