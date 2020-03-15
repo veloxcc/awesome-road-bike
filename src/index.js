@@ -26,7 +26,7 @@ const renderList = ({
   name,
   items,
 }) => (
-  <div key={name}>
+  <div class="section" key={name}>
     <ListHeading id={slug(name)}>{name}</ListHeading>
     <ul className="plain-list">
       {renderListItems(items)}
@@ -64,8 +64,8 @@ const renderTOCListItems = lists => lists.map(({
 
 const renderTOC = data => (
   <div>
-    <h2 className="list-title">Contents</h2>
-    <ul>
+    <h2 className="list-title-toc">Contents</h2>
+    <ul className="list-toc">
       {renderTOCListItems(data)}
     </ul>
   </div>
@@ -80,8 +80,8 @@ const App = ({ data }) => (
     </header>
     <div className="row">
       <div className="column">
-        <h1 className="main-title">Awesome Road Bike</h1>
-        <p>A curated list of road bike related stuff!</p>
+        <h1 className="main-title">Awesome <nobr>Road Bike</nobr></h1>
+        <p>A curated list of road bike related stuff.</p>
         {data && renderTOC(data)}
         {data && renderData(data)}
       </div>
